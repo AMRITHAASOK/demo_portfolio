@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(170, 169, 166);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px;
+}
+.navbar ul li{
+    font-weight: bolder;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(249, 243, 240);
+    padding: 40px;
+}
+.navbar ul li a:hover{
+    color: rgb(17, 17, 18);
+   text-shadow: 3px 4px 6px;
+}
+
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.126);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background-image: url('https://wallpapercave.com/wp/wp2004894.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}
+.heading1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin: 40px;
+}
+.btn{
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    transition: .9s ease;
+
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgba(245, 245, 220, 0.747);
+ box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+
+}
+
+/* About */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 50px;
+
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 575px;
+    height: 400px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-weight: bolder;
+    margin-bottom: 20px;
+   
+}
+
+/* portfolio */
+#portfolio{
+   display: flex; 
+   flex-direction: column;
+   background-color: rgba(51, 43, 43, 0.42);
+   color: rgb(252, 252, 251);
+   align-items: center;
+   padding: 20px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+   
+}
+.gallery img{
+    width:360px;
+    height: 240px;
+    margin: 10px;
+}
+
+/* services */
+#services{
+    display: flex; 
+   flex-direction: column;
+   padding: 20px;
+}
+.row{
+    display: flex;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid rgb(8, 5, 5);
+    margin: 10px;
+    padding: 20px;
+    align-items: center;
+    text-align: justify;
+    border-radius: 15px;
+  
+    background: linear-gradient(to top, black 50%,white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px black;
+}
+.box img{
+    width: 80px;
+    height: 80px;
+}
+
+/* contact */
+#contact{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(103, 101, 101);
+    color: white;
+    padding: 20px;
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input{
+    padding: 10px;
+    margin: 10px;
+}
+#send{
+    margin: 20px;
+    padding: 10px;
+}
+#send:hover{
+    color: rgb(253, 240, 240);
+    background-color: black;
+}
